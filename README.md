@@ -174,6 +174,17 @@ powerbi-adventureworks/
 │
 ├── AdventureWorks_Report_FINAL.pbix    # Full Power BI report file
 │
+├── datasets/                                          # Raw CSV files — connect directly in Power BI Desktop
+│   ├── AdventureWorks_Sales_Data_2020.csv             # Fact: sales transactions 2020
+│   ├── AdventureWorks_Sales_Data_2021.csv             # Fact: sales transactions 2021
+│   ├── AdventureWorks_Sales_Data_2022.csv             # Fact: sales transactions 2022
+│   ├── AdventureWorks_Returns_Data.csv                # Fact: product returns
+│   ├── AdventureWorks_Customer_Lookup.csv             # Dim: customer demographics
+│   ├── AdventureWorks_Product_Lookup.csv              # Dim: product details and pricing
+│   ├── AdventureWorks_Product_Categories_Lookup.csv   # Dim: product categories
+│   ├── AdventureWorks_Product_Subcategories_Lookup.csv# Dim: product subcategories
+│   ├── AdventureWorks_Calendar_Lookup.csv             # Dim: date table for time intelligence
+│   └── AdventureWorks_Territory_Lookup.csv            # Dim: sales territories and regions
 ├── screenshots/                         # Page-by-page screenshots
 │   ├── 01_exec_dashboard.png
 │   ├── 02_map.png
@@ -198,12 +209,16 @@ powerbi-adventureworks/
 
 ---
 
+
 ## 🔗 Related Projects
 
-This Power BI report visualizes the same business domain as my SQL projects:
+This report is part of a three-project series covering the full data pipeline — from raw data to business insights:
 
-- **[SQL Data Warehouse Project](https://github.com/dishajain-dataanalyst/sql-data-warehouse-project)** — The ETL pipeline and star schema that feeds reports like this
-- **[SQL Data Analytics Project](https://github.com/dishajain-dataanalyst/sql-data-analytics-project)** — The SQL-layer analysis before visualization
+| Project | What it covers |
+|---------|---------------|
+| [SQL Data Warehouse](https://github.com/dishajain-dataanalyst/sql-data-warehouse-project) | ETL pipeline, Medallion Architecture (Bronze/Silver/Gold), star schema modeling, data quality checks |
+| [SQL Data Analytics](https://github.com/dishajain-dataanalyst/sql-data-analytics-project) | 14 advanced SQL scripts — EDA, time-series, segmentation, cumulative analysis, report views |
+| **This repo** | End-to-end Power BI report — 8 pages, DAX measures, drillthrough, What-If analysis, AI visuals |
 
 ---
 
