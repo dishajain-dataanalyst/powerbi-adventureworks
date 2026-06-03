@@ -3,7 +3,7 @@
 
 ---
 
-## 👋 Why I Built This
+## 👋 Why I Built This 
 
 Power BI is the tool I use most in my day job. I've built production dashboards for operations, billing, and inventory teams — but I wanted a portfolio piece that shows the *full range* of what Power BI can do, not just bar charts and slicers.
 
